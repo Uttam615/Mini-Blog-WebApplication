@@ -1,0 +1,112 @@
+.update-post-container {
+  max-width: 700px;
+  height: 70%;
+  margin: 60px auto;
+  padding: 40px 30px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #f8f9fa, #ffffff);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.update-post-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #343a40;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.update-post-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.update-post-container input[type="text"],
+.update-post-container textarea {
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  background: #f9f9f9;
+  transition: all 0.25s ease;
+}
+
+.update-post-container input[type="text"]:focus,
+.update-post-container textarea:focus {
+  border-color: #007bff;
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+.update-post-container button {
+  padding: 14px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+  transform: scale(1);
+}
+
+.update-post-container button:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+
+.update-post-container button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.update-post-container .error,
+.update-post-container .success {
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+  animation: fadeIn 0.4s ease-in;
+}
+
+.update-post-container .error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.update-post-container .success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .update-post-container {
+    padding: 25px 20px;
+    border-radius: 14px;
+  }
+
+  .update-post-container h2 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    box-sizing: border-box;
+}
+.register-container{
+    font-family: 'Poppins',sans-serif;
+    background: gainsboro;
+    padding: 40px 50px;
+    margin: 70px auto;
+    height: 70vh;
+    width: 100%;
+    max-width: 450px;
+    animation: fadeIn 0.6s ease-in-out;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    border-radius: 13px;
+    margin-top: 12px;
+}
+.register-container h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 10px 11px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border: none;
+    background-color:#f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input::placeholder{
+    color:black;
+    font-size: 16px;
+    font-weight: 600;
+}
+input:focus{
+    outline: none;
+    border-color: red;
+    background-color:#fff;
+}
+button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+button:hover{
+    background-color: tomato;
+}
+.error{
+    background-color: #ffecec;
+    color: red;
+    font-weight: 600;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+}
+.login-link{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.login-link a{
+    text-decoration:underline;
+    color: darkcyan;
+    font-weight: 600;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+.login-link a:hover{
+    color: blue;
+}
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .register-container {
+    padding: 30px 20px;
+  }
+
+  .register-container h2 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
